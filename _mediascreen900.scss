@@ -1,0 +1,105 @@
+@media screen and (max-width: 900px) {
+
+    body {
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        margin: 20px 0;
+    }
+
+    .card-text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 20px;
+
+        .block {
+            max-width: 80%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .title {
+            font-family: $mainfont;
+            font-weight: 700;
+            font-size: 0.80rem;
+            color: $main-heading-stats;
+            padding: 20px 0px 10px 0px;
+    
+            span {
+                color: $accent;
+            }
+        }
+    
+        .description {
+            font-family: $mainfont;
+            font-weight: 400;
+            font-size: 0.85rem;
+            color: $main-paragraph;
+            padding: 10px 0;
+        }
+    
+        .stats {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+    
+            .stats-result {
+                padding: 10px 0;
+            }
+    
+            .stats-number {
+                font-family: $mainfont;
+                font-weight: 700;
+                font-size: 1.5rem;
+                color: $main-heading-stats;
+            }
+    
+            .stats-heading {
+                font-family: $statsheadingfont;
+                font-weight: 400;
+                font-size: 0.8rem;
+                color: $stat-headings;
+            }
+        }
+
+    }
+
+    .card-image {
+        width: 100%;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 20px;
+
+        .header-desktop {
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 20px;
+            display: none;
+        }
+
+        .header-mobile {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .overlay {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    }
+    
+    
+
+
+}

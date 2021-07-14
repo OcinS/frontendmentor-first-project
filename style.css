@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: #090b1a;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+}
+
+.card-text {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 50%;
+  background-color: #1b1938;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-text .block {
+  margin: 0 50px;
+}
+
+.card-text .title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: white;
+  padding: 20px 0;
+}
+
+.card-text .title span {
+  color: #aa5cdb;
+}
+
+.card-text .description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 20px 0;
+}
+
+.card-text .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 20px 0;
+}
+
+.card-text .stats .stats-result {
+  padding: 0px 50px 0px 0px;
+}
+
+.card-text .stats .stats-number {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: white;
+}
+
+.card-text .stats .stats-heading {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card-image {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 50%;
+  position: relative;
+}
+
+.card-image .header-desktop {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card-image .header-mobile {
+  display: none;
+}
+
+.card-image .overlay {
+  width: 100%;
+  height: 100%;
+  background: #6500a3;
+  position: absolute;
+  top: 0;
+  opacity: 0.55;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+  .card {
+    margin: 0 70px;
+  }
+  .card-text {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 50%;
+    background-color: #1b1938;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-text .block {
+    margin: 0 50px;
+  }
+  .card-text .title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: white;
+    padding: 20px 0;
+  }
+  .card-text .title span {
+    color: #aa5cdb;
+  }
+  .card-text .description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 20px 0;
+  }
+  .card-text .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 20px 0;
+  }
+  .card-text .stats .stats-result {
+    padding: 0px 50px 0px 0px;
+  }
+  .card-text .stats .stats-number {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: white;
+  }
+  .card-text .stats .stats-heading {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and (max-width: 1305px) {
+  .card {
+    margin: 0 70px;
+  }
+  .card-text {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 50%;
+    background-color: #1b1938;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-text .block {
+    margin: 0 50px;
+  }
+  .card-text .title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+    padding: 20px 0;
+  }
+  .card-text .title span {
+    color: #aa5cdb;
+  }
+  .card-text .description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 20px 0;
+  }
+  .card-text .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 20px 0;
+  }
+  .card-text .stats .stats-result {
+    padding: 0px 50px 0px 0px;
+  }
+  .card-text .stats .stats-number {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+  }
+  .card-text .stats .stats-heading {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  .card {
+    margin: 0 70px;
+  }
+  .card-text {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 50%;
+    background-color: #1b1938;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-text .block {
+    margin: 0 50px;
+  }
+  .card-text .title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    padding: 20px 0;
+  }
+  .card-text .title span {
+    color: #aa5cdb;
+  }
+  .card-text .description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 20px 0;
+  }
+  .card-text .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 20px 0;
+  }
+  .card-text .stats .stats-result {
+    padding: 0px 50px 0px 0px;
+  }
+  .card-text .stats .stats-number {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: white;
+  }
+  .card-text .stats .stats-heading {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and (max-width: 1014px) {
+  .card {
+    margin: 0 70px;
+  }
+  .card-text {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 50%;
+    background-color: #1b1938;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-text .block {
+    margin: 0 50px;
+  }
+  .card-text .title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: white;
+    padding: 20px 0;
+  }
+  .card-text .title span {
+    color: #aa5cdb;
+  }
+  .card-text .description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 20px 0;
+  }
+  .card-text .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 20px 0;
+  }
+  .card-text .stats .stats-result {
+    padding: 0px 50px 0px 0px;
+  }
+  .card-text .stats .stats-number {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+  }
+  .card-text .stats .stats-heading {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 0.4rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    height: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 300px;
+    margin: 20px 0;
+  }
+  .card-text {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+  }
+  .card-text .block {
+    max-width: 80%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .card-text .title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 0.80rem;
+    color: white;
+    padding: 20px 0px 10px 0px;
+  }
+  .card-text .title span {
+    color: #aa5cdb;
+  }
+  .card-text .description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 10px 0;
+  }
+  .card-text .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .card-text .stats .stats-result {
+    padding: 10px 0;
+  }
+  .card-text .stats .stats-number {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+  }
+  .card-text .stats .stats-heading {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .card-image {
+    width: 100%;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 20px;
+  }
+  .card-image .header-desktop {
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 20px;
+    display: none;
+  }
+  .card-image .header-mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .card-image .overlay {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
